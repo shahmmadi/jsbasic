@@ -10,21 +10,26 @@ function checkAge(e) {
 
 let myAge = document.querySelector('input').value;
 
-let message = "";
-console.log('RUNIGN ...' + myAge);
+let message = `<ul>`;
+
+console.log('RUNNING ...' + myAge);
+
     if (myAge < license && myAge >= jrop) {
-         message += 'you can have a jr0p ;license';
+         message += `<li>you can have a jr0p license</li>`;
     }
 
     if (myAge > +license) {
-         message+='you can have a regular license';
+         message+=`<li>you can have a regular license</li>`;
     }
 
     if (myAge >= rental) {
-     message += 'you can rent a car';
+     message += `<li>you can rent a car</li>`;
+    }
 
-    }
     if (myAge < jrop) {
-        message+= "You're too young to drive";
+        message+= `<li>You're too young to drive</li>`;
     }
+message  +=`</ul>` 
+document.querySelector('#output').innerHTML = message;
+
 }
