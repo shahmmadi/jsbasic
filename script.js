@@ -51,8 +51,6 @@ console.error("DENIEED")
   const jrop = 16;
   const rental = 25;   
 
-
-
    function checkAge( myAge) {
   console.log('RUNIGN ...'+myAge);
   if (myAge < license && myAge >= jrop){
@@ -63,7 +61,7 @@ console.error("DENIEED")
 
   }
 
-  If (myAge >+license) {
+  if (myAge >+license) {
      console.log('you can have a regular license');
   }
   
@@ -71,7 +69,7 @@ console.error("DENIEED")
     console,log('you can rent a car');
 
 }
-If (myAge < jrop) {
+if (myAge < jrop) { 
     console.log("You're too young to drive");
      }
 }
@@ -80,3 +78,4 @@ checkAge(6);
 checkAge(17);
 checkAge(19);
 checkAge(37);
+ 
